@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Assignment 12.2</title>
+</head>
+<body>
+<script>
+	var num = [10, 8, 12, 36];
+	var doubles = num.map(function (x) {//function doubles values
+	document.write(x * 2 + "<br>");
+	return x * 2
+	}) 
+
+	//funtion for numbers greater than twenty created
+	function greattwenty (value) {
+	return value > 20;
+	}
+	var twenty = [10, 8, 12, 36];
+	var result = twenty.filter(greattwenty);
+	document.write(result);
+	greattwenty();
+
+	//sum of filtered array
+	var total = [10, 8, 12, 36].reduce(function (sum, value) {
+	return sum + value;
+	document.write(sum + value);
+	}, 0);
+</script> 
+</body>
+</html>
